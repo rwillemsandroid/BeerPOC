@@ -1,5 +1,6 @@
 package be.rafwillems.beerpoc.data
 
+import be.rafwillems.beerpoc.data.model.Brewery
 import be.rafwillems.beerpoc.data.model.ExampleObject
 import be.rafwillems.beerpoc.data.model.LoginResult
 import io.reactivex.Single
@@ -11,5 +12,8 @@ interface RetrofitWebService {
     fun getExampleObject(): Single<ExampleObject>
 
     @GET("login/{username}")
-    fun doLogin(@Path("username") username:String): Single<LoginResult>
+    fun doLogin(@Path("username") username: String): Single<LoginResult>
+
+    @GET("breweries")
+    fun getBreweries(): Single<List<Brewery>>
 }
