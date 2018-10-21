@@ -1,8 +1,10 @@
-package be.rafwillems.beerpoc
+package be.rafwillems.beerpoc.ui.beerlist
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import be.rafwillems.beerpoc.ui.beerdetail.BeerDetailController
+import be.rafwillems.beerpoc.R
 import com.bluelinelabs.conductor.Controller
 import com.bluelinelabs.conductor.RouterTransaction
 

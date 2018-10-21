@@ -1,4 +1,4 @@
-package be.rafwillems.beerpoc
+package be.rafwillems.beerpoc.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,8 @@ import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
 import com.bluelinelabs.conductor.Conductor
 import android.view.ViewGroup
+import be.rafwillems.beerpoc.R
+import be.rafwillems.beerpoc.ui.login.LoginController
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         router = Conductor.attachRouter(this, container, savedInstanceState)
         if (!router.hasRootController()) {
-            router.setRoot(RouterTransaction.with(HomeController()))
+            router.setRoot(RouterTransaction.with(LoginController()))
         }
     }
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_welcome_text">Who\'s thirsty?</string>
+
+    <string name="login_error">Oops… something went wrong</string>
+    <string name="login_configure">Edit users</string>
+
+    <!-- TODO: save users dynamically in shared preferences -->
+    <string name="login_user_raf">Raf</string>
+    <string name="login_user_batman">Batman</string>
+    <string name="login_user_freddy">Freddy</string>
+</resources>

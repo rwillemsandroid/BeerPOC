@@ -1,8 +1,9 @@
-package be.rafwillems.beerpoc
+package be.rafwillems.beerpoc.ui.beerdetail
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import be.rafwillems.beerpoc.R
 import com.bluelinelabs.conductor.Controller
 
 class BeerDetailController : Controller() {
