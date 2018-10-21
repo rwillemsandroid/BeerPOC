@@ -14,6 +14,6 @@ interface RetrofitWebService {
     @GET("login/{username}")
     fun doLogin(@Path("username") username: String): Single<LoginResult>
 
-    @GET("breweries")
+    @GET("brewery")
     fun getBreweries(): Single<List<Brewery>>
 }
