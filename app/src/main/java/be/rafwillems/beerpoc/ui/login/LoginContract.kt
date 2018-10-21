@@ -5,7 +5,7 @@ import com.hannesdorfmann.mosby3.mvp.MvpView
 
 interface LoginContract {
     interface View : MvpView {
-        fun onClickLogin()
+        fun onClickLogin(user: String)
         fun showError()
         fun showLoading()
         fun hideLoading()

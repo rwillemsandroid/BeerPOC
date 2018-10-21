@@ -8,7 +8,7 @@ import io.reactivex.Single
 class BreweriesUseCase(private val retrofitDataStore: RetrofitDataStore) {
 
     fun breweries(): Single<List<Brewery>> {
-        return retrofitDataStore.getBreweries()
+        return retrofitDataStore.breweries()
     }
 
 }
